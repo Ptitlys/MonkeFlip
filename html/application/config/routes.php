@@ -51,6 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 
-$route['default_controller'] = 'Controlleur_films';
+$route['default_controller'] = 'Main_controlleur';
 //$route['404_override'] = '';
 //$route['translate_uri_dashes'] = FALSE;
