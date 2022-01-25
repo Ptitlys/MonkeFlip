@@ -7,8 +7,9 @@ class Main_controlleur extends CI_Controller {
 
     //affiche la page d'accueil
    public function index(){
+        $data['titre']="Accueil";
         $data['content']='accueil';
-        $data['header']='visiteur';
+        $data['header']='utilisateur';
         $this->load->vars($data);
         $this->load->view('template');
        
