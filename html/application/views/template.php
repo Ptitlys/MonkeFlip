@@ -50,14 +50,46 @@
 
 }
 
-   body {
-       background-color: #3B1273;
-       padding-left: 10px;
-       padding-right: 10px;
-       overflow-x: hidden; 
-   }
 
-   h1{
+
+.keyword{
+    color:#E47CF1;
+    background-color: #5D5EC2;
+    border-radius:10px;
+    padding:5px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#menu{
+    background-color:#5C2071;
+    box-shadow: 10px 5px 5px #401C8C;
+        
+}
+
+#petit_menu{
+    margin: 35px 20px;
+    position: sticky;
+    top: 10px;
+    float: right;
+    right: 20px;
+    z-index: 2;
+    background-color: #5C2071;
+    padding:10px;
+    border-radius:30px;
+
+}
+
+body {
+    background-color: #3B1273;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: hidden; 
+}
+
+#bienvenue{
     font-size:2.7em;
     font-family: BungeeShade;
     text-shadow: -0.1em 0.1em #1156A6, 0.1em -0.1em #5C2071;
@@ -66,7 +98,12 @@
 
 h2, h1{
     color:#05AFF2;
+    
     }
+
+.titre{
+    margin-top: 10px;
+}
 
 nav h2{
     font-family: Mina;
@@ -81,6 +118,39 @@ nav h2{
 
 h2{
     font-family: NanumGothicCoding;
+}
+
+#fleche{
+    position: sticky;
+    bottom: 10px;
+    z-index: 2;
+    float: right;
+}
+
+#rectangle{
+    background-color: #05AFF2;
+    border-radius:20px;
+    margin-left:30px;
+}
+
+#favori{
+    z-index: 1;
+    position: relative;
+    left:12.9%;
+    margin-top:10px;
+    margin-left:0;
+}
+
+#filtre{
+    background-color: #5C2071;
+    border-radius:30px;
+    z-index: 2;
+    position: sticky;
+    top: 10px;
+    margin: 30px 20px;
+    padding: 10px;
+    float: left;
+
 }
 
 </style>
