@@ -1,51 +1,65 @@
 
-
 <!-- Menu panier / favoris / messagerie -->
-<aside>
-    <nav>
-    <a href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=40></a>
-    <a href="<?php echo base_url('index.php/Main_controlleur/index') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=40></a>
-    <a href="<?php echo base_url('index.php/Main_controlleur/panier') ?>"><img src='<?php echo base_url('images/Panier.png') ?>' height=40></a>
-    </nav>
+<aside id="petit_menu" class="row">
+    <a class="pl-1" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
+    <a class="pl-1" href="<?php echo base_url('index.php/Main_controlleur/index') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
+    <a class="pl-1" href="<?php echo base_url('index.php/Main_controlleur/panier') ?>"><img src='<?php echo base_url('images/Panier.png') ?>' height=55></a>
 </aside>
 
-<h1>BIENVENUE SUR MONKEBAY</h1>
+<h1 class="text-center pt-4 pb-5">BIENVENUE SUR MONKEBAY</h1>
 
 <section>
-    <h1>Nos recommandations pour vous</h1>
+    <h2>Nos recommandations pour vous</h2>
 
     <article>
         <?php
-        echo '<span>';
-            for($i = 0;$i < 5; $i++):
-                echo '<div class="row justify-content-around mb-5">';
-                for($j = 0; $j < 4; $j++):
+            for($i = 0;$i < 3; $i++):
+                echo '<div class="row mb-5 mt-4">';
+                for($j = 0; $j < 6; $j++):
                     echo '<img src=';
                     echo base_url('images/favori.png');
                     echo' id="favori" width="40" height="40"/>';
-                    echo '<img id="rectangle" width="20" height="20"/>';
+                    echo '<img id="rectangle" width="230" height="300"/>';
                 endfor;
                 echo '</div>';
             endfor;
-            echo '</span>';
         ?>
 
 
     </article>
 </section>
 
+
+
 <style>
+
+
     #rectangle{
-        background-color: blue;
-        width: 20%;
-        height: 40%;
+        background-color: #05AFF2;
+        border-radius:20px;
+        margin-left:30px;
     }
 
     #favori{
+        z-index: 1;
         position: relative;
-        left:20%;
-        bottom:10%;
+        left:12.9%;
+        margin-top:10px;
+        margin-left:0;
     }
+
+    #petit_menu{
+        margin: 20px 0px;
+        position: sticky;
+        float: right;
+        right: 20px;
+        z-index: 1;
+        background-color: #5C2071;
+        padding:10px;
+        border-radius:30px;
+
+    }
+
 
 
 
