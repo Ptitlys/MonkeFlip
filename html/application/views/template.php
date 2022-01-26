@@ -58,14 +58,24 @@
    }
 
    h1{
+    font-size:2.7em;
     font-family: BungeeShade;
     text-shadow: -0.1em 0.1em #1156A6, 0.1em -0.1em #5C2071;
+    margin-top:30px;
 }
+
+h2, h1{
+    color:#05AFF2;
+    }
 
 nav h2{
     font-family: Mina;
     padding-top: 10px;
-    text-shadow: -0.1em 0.1em #1156A6;
+    text-shadow:
+    -1px -1px 0 #1156A6,
+    1px -1px 0 #1156A6,
+    -1px 1px 0 #1156A6,
+    1px 1px 0 #1156A6;
 
 }
 

@@ -10,11 +10,11 @@
 <style>
     #menu{
         background-color:#5C2071;
+        box-shadow: 10px 5px 5px #401C8C;
+        
     }
 
-    h2, h1{
-        color:#05AFF2;
-    }
+    
 
     
 </style>

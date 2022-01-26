@@ -14,6 +14,14 @@ class Main_controlleur extends CI_Controller {
         $this->load->view('template');
        
     }
+
+    public function catalogue(){
+        $data['titre']="Catalogue";
+        $data['content']='catalogue';
+        $data['header']='utilisateur';
+        $this->load->vars($data);
+        $this->load->view('template');
+    }
 }
 
 ?>
