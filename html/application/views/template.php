@@ -53,8 +53,11 @@
 
 
 .keyword{
-    color:#E47CF1;
-    background-color: #5D5EC2;
+    font-family: 'Mina';
+    color:black;
+    font-weight: bold;
+    font-size:1.2em;
+    background-color: #05AFF2;
     border-radius:10px;
     padding:5px;
 }
@@ -109,10 +112,10 @@ nav h2{
     font-family: Mina;
     padding-top: 10px;
     text-shadow:
-    -1px -1px 0 #1156A6,
-    1px -1px 0 #1156A6,
-    -1px 1px 0 #1156A6,
-    1px 1px 0 #1156A6;
+    -2px -2px 0 #3B1273,
+    2px -2px 0 #3B1273,
+    -2px 2px 0 #3B1273,
+    2px 2px 0 #3B1273;
 
 }
 

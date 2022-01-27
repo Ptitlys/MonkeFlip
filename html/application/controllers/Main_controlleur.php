@@ -22,6 +22,17 @@ class Main_controlleur extends CI_Controller {
         $this->load->vars($data);
         $this->load->view('template');
     }
+
+    public function catalogue(){
+        $data['titre']="Vos offres";
+        $data['content']='vos_offres';
+        $data['header']='utilisateur';
+        $this->load->vars($data);
+        $this->load->view('template');
+    }
+
 }
+
+
 
 ?>
