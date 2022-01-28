@@ -50,6 +50,21 @@
 
 }
 
+#petit_menu_vertical{
+        margin: 35px 20px;
+        position: sticky;
+        top: 10px;
+        float: right;
+        right: 20px;
+        z-index: 1;
+        background-color: #5C2071;
+        border-radius:30px;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-top:30px;
+        padding-bottom: 20px;
+    }
+
 
 
 .keyword{

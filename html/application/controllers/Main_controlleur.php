@@ -23,7 +23,7 @@ class Main_controlleur extends CI_Controller {
         $this->load->view('template');
     }
 
-    public function catalogue(){
+    public function vos_offres(){
         $data['titre']="Vos offres";
         $data['content']='vos_offres';
         $data['header']='utilisateur';
