@@ -171,5 +171,31 @@ h2{
 
 }
 
+#bloc{
+        background-color: #05AFF2;
+        border-radius:30px;
+        margin-left:10%;
+        margin-right:15%;
+        padding:2%
+    }
+
+    #photo{
+        background-color: white;
+    }
+
+    #bloc h2{
+        color: #05F2DB;
+        font-weight:bold;
+    }
+
+    .sous-bloc{
+        background-color: #05F2DB;
+        border-radius:30px;
+        margin: 2% 0;
+        padding: 1.5% 1.2%;
+        color: white;
+    }
+
+
 </style>
 

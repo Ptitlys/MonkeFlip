@@ -31,6 +31,30 @@ class Main_controlleur extends CI_Controller {
         $this->load->view('template');
     }
 
+    public function produit(){
+        $data['titre']="Produit";
+        $data['content']='produit';
+        $data['header']='utilisateur';
+        $this->load->vars($data);
+        $this->load->view('template');
+    }
+    public function vendeur(){
+        $data['titre']="Vendeur";
+        $data['content']='vendeur';
+        $data['header']='utilisateur';
+        $this->load->vars($data);
+        $this->load->view('template');
+    }
+
+    public function favori(){
+        $data['titre']="Page Favoris";
+        $data['content']='favori';
+        $data['header']='utilisateur';
+        $this->load->vars($data);
+        $this->load->view('template');
+    }
+
+
 }
 
 

@@ -5,14 +5,14 @@
     <a class="pl-3 pr-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
 </nav>
 
-<h1 id="bienvenue" class="text-center pt-4 pb-5">BIENVENUE SUR MONKEBAY</h1>
+<h1 id="bienvenue" class="text-center pt-4 pb-5">*nom du vendeur*</h1>
 
 <section>
     <h2>Nos recommandations pour vous</h2>
 
     <article>
         <?php
-            for($i = 0;$i < 3; $i++):
+            /*for($i = 0;$i < 3; $i++):
                 echo '<div class="row mb-5 mt-4">';
                 for($j = 0; $j < 6; $j++):
                     echo '<img src=';
@@ -25,7 +25,7 @@
                     echo '</a>';
                 endfor;
                 echo '</div>';
-            endfor;
+            endfor;*/
         ?>
 
 
