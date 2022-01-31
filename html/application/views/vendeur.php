@@ -12,6 +12,41 @@
 
     <article>
         <?php
+            $noteV=9;
+            $mifavori=$noteV%2;
+            function euclidivision($nombre , $diviseur){ 
+                $nombre = intval($nombre)+0; 
+                  $diviseur = intval($diviseur)+0; 
+                 
+                  if ($diviseur == 0){ return array();} 
+                  if ($nombre == 0){ return array($nombre, $diviseur);} 
+                  
+                  $quotient = floor($nombre/$diviseur); 
+                  $reste = $nombre - $quotient*$diviseur; 
+                  
+                  if ($reste < 0){ 
+                  if ($diviseur > 0){ 
+                  $quotient--; 
+                  $reste += $diviseur; 
+                  } else { 
+                  $quotient++; 
+                  $reste -= $diviseur; 
+                  } 
+                  }  
+                  return array($quotient, $reste); 
+               }
+            $favori=$noteV/2;
+            for ($i=0;$i<$favori;$i++){
+                echo '<img src=';
+                echo base_url('images/favori.png');
+                echo' width="40" height="40"/>';
+            }
+            for ($i=0;$i<$mifavori;$i++){
+                echo '<img src=';
+                echo base_url('images/mi_favori.png');
+                echo'  width="40" height="40"/>';
+            }
+            
             /*for($i = 0;$i < 3; $i++):
                 echo '<div class="row mb-5 mt-4">';
                 for($j = 0; $j < 6; $j++):

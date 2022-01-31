@@ -3,23 +3,27 @@
     <a class="pl-3 pr-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
 </nav>
 
-<section id="bloc"> 
-    <article class="row">
-        <div class="ml-5">
+<section id="bloc" class="justify-content-center container"> 
+    <article class="row justify-content-around text-center">
+        <div class="ml-3">
+            <img id="photo" class="col-7" width="100" height="100"/>
         </div>
-        <div class="ml-5">
-            <h2>- Prix fixe</h2>
-            <?php for($i = 0;$i < 2; $i++):
-                    echo '<div class="sous-bloc row">';
-                    echo '<img class="m-3" id="photo" width="100" height="100"/>';
-                    echo '<p>Prix</p>';
-                    echo '<p>Nom produit</p>';
-                    echo '</div>';
-                endfor;
-                ?>
+        <div class="ml-3">
+            <h2>NOM DU PRODUIT</h2>
+            <p>type vente</p>
+            <div class="row justify-content-between">
+                <p>Prix:XX</p>
+                <p>Etat</p>
+            </div>
+            <div class="row justify-content-between">
+                <p>Nom Vendeur</p>
+                <p>Note Vendeur</p>
+            </div>
+            <p>Achat Immediat<p>
         </div>
     </article>
     <article>
+        <p>LE TEXTE DE DESCRIPTION</p>
     </article>
 </section>
 
