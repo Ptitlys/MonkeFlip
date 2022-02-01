@@ -1,7 +1,7 @@
 <!-- favoris / messagerie -->
-<nav id="petit_menu" class="row">
-    <a class="pr-2 pl-3" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
-    <a class="pl-3 pr-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
+<nav id="petit_menu" class="row-auto">
+    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
+    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
 </nav>
 
 <!--Filtre-->
@@ -12,19 +12,17 @@
 <h1 class="pt-4 pb-5 titre text-center">VOS FAVORIS</h1>
 
 
-<article class="container">
+<article>
         <?php
             for($i = 0;$i < 5; $i++):
-                echo '<div class="col rectangle_favori">';
                     //affichage produit et details
-                    echo '<div class="row">';
-                        echo '<img class="m-3 col-3" id="photo" width="100" height="100"/>';
+                    echo '<div class="row align-self-center align-items-center rectangle_favori">';
+                        echo '<img class="m-3 col-auto" id="photo" width="100" height="100"/>';
 
-                        echo '<p>Nom de produit</p>';
-                        echo '<p>Etat</p>';
+                        echo '<p class="col-auto">Nom de produit</p>';
+                        echo '<p class="col-auto">Etat</p>';
 
                     echo '</div>';
-                echo '</div>';
             endfor;
         ?>
 
@@ -40,9 +38,10 @@
 <style>
     .rectangle_favori{
         background-color:#05AFF2;
-        width: 90vw;
-        height: 25vh;
-        margin: 3px 0px;
         border-radius:30px;
+        margin-top:5px;
+        margin-left:10%;
+        margin-right:15%;
+        
     }
 </style>

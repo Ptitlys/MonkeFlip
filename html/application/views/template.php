@@ -150,7 +150,7 @@ h2{
     margin-left:30px;
 }
 
-#article{
+#article, #bloc{
         position: relative;
     }
 

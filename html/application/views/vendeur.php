@@ -1,8 +1,8 @@
 
-<!-- Menu panier / favoris / messagerie -->
-<nav id="petit_menu" class="row">
-    <a class="pr-2" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
-    <a class="pl-3 pr-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
+<!-- favoris / messagerie -->
+<nav id="petit_menu" class="row-auto">
+    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
+    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
 </nav>
 
 <h1 id="bienvenue" class="text-center pt-4 pb-5">*nom du vendeur*</h1>

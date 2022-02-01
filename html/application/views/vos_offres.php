@@ -7,7 +7,7 @@
 
 <!--Filtre-->
 <figure id="filtre">
-<img  src='<?php echo base_url('images/plus.png') ?>' height=55>
+<img src='<?php echo base_url('images/plus.png') ?>' height=55>
 </figure>
 
 
@@ -28,7 +28,7 @@
             endfor;
                 ?>
         </div>
-        <div id="fixe" class="ml-5">
+        <div class="ml-5">
         <h2>- Prix fixe</h2>
         <?php for($i = 0;$i < 2; $i++):
                 echo '<div class="sous-bloc row align-items-center">';
