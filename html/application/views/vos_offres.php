@@ -1,8 +1,8 @@
 <!-- Menu graphe / favoris / messagerie -->
-<nav id="petit_menu_vertical" class="">
-    <a class="row mb-4" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
-    <a class="row mb-4" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
-    <a class="row mb-4" href="<?php echo base_url('index.php/Main_controlleur/statistiques') ?>"><img src='<?php echo base_url('images/graphe.png') ?>' height=55></a>
+<nav id="petit_menu_vertical" class="col-auto">
+    <a class="row mb-2" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
+    <a class="row mb-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
+    <a class="row mb-2" href="<?php echo base_url('index.php/Main_controlleur/statistiques') ?>"><img src='<?php echo base_url('images/graphe.png') ?>' height=55></a>
 </nav>
 
 <!--Filtre-->
@@ -21,9 +21,9 @@
             <h2>- Enchere</h2>
             <?php for($i = 0;$i < 2; $i++):
                 echo '<div class=" sous-bloc row align-items-center">';
-                    echo '<img class="m-3" id="photo" width="100" height="100"/>';
-                    echo '<p class="pl-5 pr-5">Prix</p>';
-                    echo '<p class="pl-5">Nom produit</p>';
+                    echo '<img class="m-3 col-auto" id="photo" width="100" height="100"/>';
+                    echo '<p class="pl-5 pr-5 col-auto">Prix</p>';
+                    echo '<p class="pl-5 col-auto">Nom produit</p>';
                 echo '</div>';
             endfor;
                 ?>
@@ -31,10 +31,10 @@
         <div id="fixe" class="ml-5">
         <h2>- Prix fixe</h2>
         <?php for($i = 0;$i < 2; $i++):
-                echo '<div class="sous-bloc row">';
-                    echo '<img class="m-3" id="photo" width="100" height="100"/>';
-                    echo '<p>Prix</p>';
-                    echo '<p>Nom produit</p>';
+                echo '<div class="sous-bloc row align-items-center">';
+                    echo '<img class="m-3 col-auto" id="photo" width="100" height="100"/>';
+                    echo '<p class="col-auto" >Prix</p>';
+                    echo '<p class="col-auto">Nom produit</p>';
                 echo '</div>';
             endfor;
                 ?>

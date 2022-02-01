@@ -1,7 +1,7 @@
 <!-- favoris / messagerie -->
-<nav id="petit_menu" class="row">
-    <a class="pr-2 pl-3" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
-    <a class="pl-3 pr-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
+<nav id="petit_menu" class="row-auto">
+    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
+    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
 </nav>
 
 <!--Filtre-->
@@ -10,14 +10,15 @@
 </figure>
 
 
-<header class="row align-items-center">
-<div id="menu_keyword" class="row ml-5">
-    <p class="m-3 keyword text-center">mot clé</p>
-    <p class="m-3 keyword text-center">mot clé</p>
-    <p class="m-3 keyword text-center">mot clé</p>
+<header class="row-auto">
+<div class="row ml-5 align-items-center">
+    <p class="m-3 keyword text-center col-auto">mot clé</p>
+    <p class="m-3 keyword text-center col-auto">mot clé</p>
+    <p class="m-3 keyword text-center col-auto">mot clé</p>
+    <h1 class="pt-4 pb-5 titre text-center col-7">Catalogue</h1>
 </div>
 
-<h1 class="pt-4 pb-5 titre text-center col-7">Catalogue</h1>
+
 
 
 </header>
@@ -25,22 +26,28 @@
 <section >
     
 
-    <article>
+<article class="container-fluid">
         <?php
-            for($i = 0;$i < 10; $i++):
-                echo '<div class="row mb-5 mt-4">';
-                for($j = 0; $j < 6; $j++):
+       
+            for($i = 0;$i < 5; $i++):
+                echo '<div class="row rmb-5 mt-4">';
+                    for($j = 0;$j < 6; $j++):
+                    echo '<div class="col-auto" id="article">';
                     echo '<img src=';
                     echo base_url('images/favori.png');
                     echo' id="favori" width="40" height="40"/>';
-                    echo '<img id="rectangle" width="230" height="300"/>';
+
+                    //affichage produit et details
+                    echo '<a href=';
+                    echo base_url('index.php/Main_controlleur/produit');
+                    echo '><img id="rectangle" width="230" height="300"/>';
+                    echo '</a>';
+                    echo '</div>';
                 endfor;
                 echo '</div>';
             endfor;
+            
         ?>
-
-
-    </article>
 
 </section>
 

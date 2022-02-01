@@ -2,14 +2,15 @@
     <html>
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php echo $titre?> MONKEBAY</title>
 
-        <link rel="stylesheet" href="<?php echo base_url("bootstrap/css/bootstrap.css"); ?>" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo base_url("css/style.css"); ?> " />
     </head>
-    <body>
+    <body class="container-fluid">
         <!-- chargement header -->
-        <header>
+        <header >
             <?php $this->load->view($header);?>
         </header>
 
@@ -59,10 +60,7 @@
         z-index: 1;
         background-color: #5C2071;
         border-radius:30px;
-        padding-left:30px;
-        padding-right: 30px;
-        padding-top:30px;
-        padding-bottom: 20px;
+        padding:20px;
     }
 
 
@@ -95,8 +93,9 @@ html{
     right: 20px;
     z-index: 2;
     background-color: #5C2071;
-    padding:10px;
+
     border-radius:30px;
+    padding: 10px;
 
 }
 
@@ -151,10 +150,14 @@ h2{
     margin-left:30px;
 }
 
+#article{
+        position: relative;
+    }
+
 #favori{
     z-index: 1;
-    position: relative;
-    left:12.9%;
+    position: absolute;
+    right:10%;
     margin-top:10px;
     margin-left:0;
 }
