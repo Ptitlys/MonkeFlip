@@ -62,6 +62,22 @@ class Main_controlleur extends CI_Controller {
         $this->load->view('template');
     }
 
+    public function messagerie(){
+        $data['titre']="Messagerie";
+        $data['content']='messagerie';
+        $data['header']='utilisateur';
+        $this->load->vars($data);
+        $this->load->view('template');
+    }
+
+    public function message(){
+        $data['titre']="Message";
+        $data['content']='message';
+        $data['header']='utilisateur';
+        $this->load->vars($data);
+        $this->load->view('template');
+    }
+
 
 }
 

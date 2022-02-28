@@ -6,4 +6,4 @@
 
 <p>vos offres</p>
 
-<p>Deconnexion</p>
+<p>Votre historique d'achat</p>

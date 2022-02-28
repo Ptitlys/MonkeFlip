@@ -2,7 +2,6 @@
 <nav id="petit_menu_vertical" class="col-auto">
     <a class="row mb-2" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
     <a class="row mb-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
-    <a class="row mb-2" href="<?php echo base_url('index.php/Main_controlleur/statistiques') ?>"><img src='<?php echo base_url('images/graphe.png') ?>' height=55></a>
 </nav>
 
 <!--Filtre-->
@@ -19,7 +18,10 @@
     <h2>- Offres en cours</h2>
         <div id="enchere" class="ml-5">
             <h2>- Enchere</h2>
-            <?php for($i = 0;$i < 2; $i++):
+
+            <?php 
+            
+            for($i = 0;$i < 2; $i++):
             echo '<a href=';
             echo base_url('index.php/Main_controlleur/produit');
                 echo '><div class=" sous-bloc row align-items-center">';
