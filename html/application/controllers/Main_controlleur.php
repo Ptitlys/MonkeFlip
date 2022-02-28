@@ -54,6 +54,14 @@ class Main_controlleur extends CI_Controller {
         $this->load->view('template');
     }
 
+    public function compte(){
+        $data['titre']="Compte";
+        $data['content']='compte';
+        $data['header']='utilisateur';
+        $this->load->vars($data);
+        $this->load->view('template');
+    }
+
 
 }
 

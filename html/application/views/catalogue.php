@@ -40,7 +40,7 @@
                     //affichage produit et details
                     echo '<a href=';
                     echo base_url('index.php/Main_controlleur/produit');
-                    echo '><img id="rectangle" width="230" height="300"/>';
+                    echo '><img id="rectangle" width="200" height="300"/>';
                     echo '</a>';
                     echo '</div>';
                 endfor;

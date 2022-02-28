@@ -20,22 +20,28 @@
         <div id="enchere" class="ml-5">
             <h2>- Enchere</h2>
             <?php for($i = 0;$i < 2; $i++):
-                echo '<div class=" sous-bloc row align-items-center">';
+            echo '<a href=';
+            echo base_url('index.php/Main_controlleur/produit');
+                echo '><div class=" sous-bloc row align-items-center">';
                     echo '<img class="m-3 col-auto" id="photo" width="100" height="100"/>';
                     echo '<p class="pl-5 pr-5 col-auto">Prix</p>';
                     echo '<p class="pl-5 col-auto">Nom produit</p>';
                 echo '</div>';
+                echo'</a>';
             endfor;
                 ?>
         </div>
         <div class="ml-5">
         <h2>- Prix fixe</h2>
         <?php for($i = 0;$i < 2; $i++):
-                echo '<div class="sous-bloc row align-items-center">';
+                echo '<a href=';
+                echo base_url('index.php/Main_controlleur/produit');
+                echo '><div class="sous-bloc row align-items-center">';
                     echo '<img class="m-3 col-auto" id="photo" width="100" height="100"/>';
                     echo '<p class="col-auto" >Prix</p>';
                     echo '<p class="col-auto">Nom produit</p>';
                 echo '</div>';
+                echo'</a>';
             endfor;
                 ?>
         </div>

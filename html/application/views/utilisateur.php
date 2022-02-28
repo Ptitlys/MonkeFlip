@@ -4,7 +4,7 @@
     <a  class="col" href="<?php echo base_url('index.php/Main_controlleur/vos_offres') ?>"><h2>VOS OFFRES</h2></a>
     <h2 class="col">zone de recherche</h2>
     <h2 class="col">ID</h2>
-    <a class="col" href="<?php echo base_url('index.php/Main_controlleur/vendeur') ?>"><img src='<?php echo base_url('images/compte.png') ?>' height=70></a>
+    <a class="col" href="<?php echo base_url('index.php/Main_controlleur/compte') ?>"><img src='<?php echo base_url('images/compte.png') ?>' height=70></a>
 </nav>    
 
 <style>

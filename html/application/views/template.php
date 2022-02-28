@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="<?php echo base_url("css/style.css"); ?> " />
     </head>
     <body class="container-fluid">
-        <!-- chargement header -->
+        <!-- chargement header 
         <header >
             <?php $this->load->view($header);?>
         </header>
