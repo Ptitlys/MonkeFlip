@@ -3,9 +3,9 @@
     <a  class="col" href="<?php echo base_url('index.php/Main_controlleur/catalogue') ?>"><h2>CATALOGUE</h2></a>
     <a  class="col" href="<?php echo base_url('index.php/Main_controlleur/vos_offres') ?>"><h2>VOS OFFRES</h2></a>
     <div class="col input-group rounded">
-        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <input type="search" class="form-control rounded" placeholder="Recherche" aria-label="Recherche" aria-describedby="search-addon" />
     </div>
-    <h2 class="col">ID</h2>
+    <h2 class="col texte-center">ID</h2>
     <a class="col" href="<?php echo base_url('index.php/Main_controlleur/compte') ?>"><img src='<?php echo base_url('images/compte.png') ?>' height=70></a>
 </nav>    
 

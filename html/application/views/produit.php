@@ -12,10 +12,10 @@
             <img id="photo" width="300" height="300"/>
         </div>
 
-        <div class="ml-3 col">
+        <div class="ml-3 col offset-1">
 
             <div class="row">
-            <h2 class="text-center col">NOM DU PRODUIT</h2>
+            <h2 class="col">NOM DU PRODUIT</h2>
             <?php
                 echo '<img src=';
                 echo base_url('images/favori_vide.png');
@@ -23,19 +23,19 @@
             ?>
             </div>
             
-            <p class="row offset-3">type vente</p>
+            <p class="row">type vente</p>
 
-            <div class="row offset-3">
+            <div class="row">
             <p class="col-3">Prix:XX</p>
             <p class="col-3">Etat</p>
             </div>
            
 
-            <div class="offset-3">
+            <div class="">
                 <p><a href="<?php echo base_url('index.php/Main_controlleur/vendeur') ?>">Nom Vendeur</a> - Note Vendeur</p>
             </div>
 
-            <p class="row justify-content-center button">Achat Immediat<p>
+            <p class="row-auto fond_violet button text-center">ACHAT IMMEDIAT<p>
 
         </div>
 
@@ -55,6 +55,17 @@
 {
 float: none;
 margin: 0 auto;
+}
+
+.button{
+    width:40%;
+    border-radius:80px;
+    padding:20px;
+    margin-top:40px;
+}
+
+.fond_violet{
+    background-color:#74308B;
 }
 
 </style>

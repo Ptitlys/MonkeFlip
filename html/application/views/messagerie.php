@@ -13,7 +13,7 @@
             for($i = 0;$i < 6; $i++):  
                     echo '<div class="row lot">';
                     for($j = 0;$j < 6; $j++):
-                    //affichage produit et details
+                    //affichage bulle de contact
                     echo '<a class="col" href=';
                     echo base_url('index.php/Main_controlleur/message');
                     echo '><p id="bulle">ID UTILISATEUR</p>';
@@ -29,17 +29,3 @@
 
 <aside id="fleche"><a href=#debut><img src='<?php echo base_url('images/fleche.png') ?>' title="fleche" height="60" width="60" /></a></aside>
 
-<style>
-    #bulle{
-        width:100%;
-        background-color: #05AFF2;
-        border-radius:30px;
-        padding: 30px;
-    }
-
-    .message{
-        margin-top:65px;
-        padding-right:10%;
-        padding-left:5%;
-    }
-    </style>

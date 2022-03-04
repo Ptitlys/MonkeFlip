@@ -185,6 +185,7 @@ h2{
 
     #photo{
         background-color: white;
+        margin-left:20px;
     }
 
     #bloc h2{
@@ -203,6 +204,20 @@ h2{
     p{
         color:white;
     }
+
+    #bulle{
+        width:100%;
+        background-color: #05AFF2;
+        border-radius:30px;
+        padding: 30px;
+    }
+
+    .message{
+        margin-top:65px;
+        padding-right:10%;
+        padding-left:5%;
+    }
+
 
 
 </style>
