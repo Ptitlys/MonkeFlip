@@ -23,7 +23,7 @@
             
             for($i = 0;$i < 2; $i++):
             echo '<a href=';
-            echo base_url('index.php/Main_controlleur/produit');
+            echo base_url('index.php/Main_controlleur/mon_produit');
                 echo '><div class=" sous-bloc row align-items-center">';
                     echo '<img class="m-3 col-auto" id="photo" width="100" height="100"/>';
                     echo '<p class="pl-5 pr-5 col-auto">Prix</p>';

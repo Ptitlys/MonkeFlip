@@ -9,14 +9,14 @@
 <img  src='<?php echo base_url('images/filtre.png') ?>' height=55>
 </figure>
 
-<h1 class="pt-4 pb-5 titre text-center">VOS FAVORIS</h1>
+<h1 class="mb-5 mt-4 pt-4 pb-5 titre text-center">VOS FAVORIS</h1>
 
 
 <article>
         <?php
             for($i = 0;$i < 5; $i++):
                     //affichage produit et details
-                    echo '<div class="row align-self-center align-items-center rectangle_favori">';
+                    echo '<div class="mb-3 row align-self-center align-items-center rectangle_favori">';
                         echo '<img class="m-3 col-auto" id="photo" width="100" height="100"/>';
 
                         echo '<p class="col-auto">Nom de produit</p>';

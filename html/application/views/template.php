@@ -80,6 +80,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    color:white;
+}
+
 #menu{
     background-color:#5C2071;
     box-shadow: 10px 5px 5px #401C8C;
@@ -217,6 +221,28 @@ h2{
         padding-right:10%;
         padding-left:5%;
     }
+
+    .colonne-centree
+{
+float: none;
+margin: 0 auto;
+}
+
+.button{
+    width:40%;
+    border-radius:80px;
+    padding:20px;
+    margin-top:40px;
+    color:white;
+}
+
+.fond_violet_fonce{
+    background-color:#74308B;
+}
+
+.fond_violet_clair{
+    background-color: #5D5EC2;
+}
 
 
 

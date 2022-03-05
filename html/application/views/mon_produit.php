@@ -30,12 +30,8 @@
             <p class="col-3">Etat</p>
             </div>
            
-
-            <div class="">
-                <p><a href="<?php echo base_url('index.php/Main_controlleur/vendeur') ?>">Nom Vendeur</a> - Note Vendeur</p>
-            </div>
-
-            <p class="row-auto fond_violet button text-center">ACHAT IMMEDIAT<p>
+            <a href="<?php echo base_url('index.php/Main_controlleur/modifier_mon_produit') ?>"><p class="row-auto fond_violet button text-center">Modifier<p></a>
+            <p class="row-auto fond_violet button text-center">Supprimer<p>
 
         </div>
 
