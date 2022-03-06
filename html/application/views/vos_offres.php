@@ -6,7 +6,9 @@
 
 <!--Filtre-->
 <figure id="filtre">
+<a href="<?php echo base_url('index.php/Main_controlleur/ajouter_un_produit') ?>">
 <img src='<?php echo base_url('images/plus.png') ?>' height=55>
+</a>
 </figure>
 
 

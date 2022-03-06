@@ -35,7 +35,7 @@
                 <p><a href="<?php echo base_url('index.php/Main_controlleur/vendeur') ?>">Nom Vendeur</a> - Note Vendeur</p>
             </div>
 
-            <p class="row-auto fond_violet button text-center">ACHAT IMMEDIAT<p>
+            <p class="row-auto fond_violet_fonce button text-center">ACHAT IMMEDIAT<p>
 
         </div>
 

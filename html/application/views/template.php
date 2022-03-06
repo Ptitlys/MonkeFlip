@@ -192,28 +192,48 @@ h2{
         margin-left:20px;
     }
 
+    /*Page Offres*/
     #bloc h2{
-        color: #05F2DB;
+        color: #70FFF1;
         font-weight:bold;
     }
 
+    .sous-bloc p{
+        color:#05AFF2;
+    }
+
     .sous-bloc{
-        background-color: #05F2DB;
+        background-color: #70FFF1;
         border-radius:30px;
         margin: 2% 0;
         padding: 1.5% 1.2%;
         color: white;
     }
 
-    p{
-        color:white;
-    }
+    /*Page Message*/
+
+    #bulle_mess, 
+    #send_mess{
+    width:80%;
+    background-color: #05AFF2;
+    border-radius:30px;
+    padding: 30px;
+}
+
+#send_mess{
+    background-color: #5D5EC2;
+    margin-bottom:30px;
+    color:white;
+
+    
+}
 
     #bulle{
         width:100%;
         background-color: #05AFF2;
         border-radius:30px;
         padding: 30px;
+        color:white;
     }
 
     .message{
@@ -222,11 +242,7 @@ h2{
         padding-left:5%;
     }
 
-    .colonne-centree
-{
-float: none;
-margin: 0 auto;
-}
+
 
 .button{
     width:40%;
@@ -236,12 +252,27 @@ margin: 0 auto;
     color:white;
 }
 
+/*Page ajouter produit et modif produit*/
+#description{
+        width:100%;
+        height:200px;
+    }
+
+    .custom-form{
+        background-color:white;
+
+    }
+
 .fond_violet_fonce{
     background-color:#74308B;
 }
 
 .fond_violet_clair{
     background-color: #5D5EC2;
+}
+
+a{
+    text-decoration:none;
 }
 
 

@@ -8,16 +8,10 @@
 
     <article class="row">
 
-
         <div class="ml-3 col offset-1">
 
             <div class="row text-center">
             <h2 class="col mb-3">NOM DU PRODUIT</h2>
-            <?php
-                echo '<img src=';
-                echo base_url('images/favori_vide.png');
-                echo' class="col-auto" width="40" height="40"/>';
-            ?>
             </div>
 
             <div class="mb-4 row align-items-start">
@@ -88,16 +82,3 @@
 </section>
 
 <aside id="fleche"><a href=#debut><img src='<?php echo base_url('images/fleche.png') ?>' title="fleche" height="60" width="60" /></a></aside>
-
-<style>
-    #description{
-        width:100%;
-        height:200px;
-    }
-
-    .custom-form{
-        background-color:white;
-
-    }
-
-</style>

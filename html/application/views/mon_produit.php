@@ -30,8 +30,8 @@
             <p class="col-3">Etat</p>
             </div>
            
-            <a href="<?php echo base_url('index.php/Main_controlleur/modifier_mon_produit') ?>"><p class="row-auto fond_violet button text-center">Modifier<p></a>
-            <p class="row-auto fond_violet button text-center">Supprimer<p>
+            <a href="<?php echo base_url('index.php/Main_controlleur/modifier_mon_produit') ?>"><p class="row-auto fond_violet_clair button text-center">Modifier<p></a>
+            <p class="row-auto fond_violet_fonce button text-center">Supprimer<p>
 
         </div>
 

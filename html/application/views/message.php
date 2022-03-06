@@ -27,21 +27,3 @@
 
 <aside id="fleche"><a href=#debut><img src='<?php echo base_url('images/fleche.png') ?>' title="fleche" height="60" width="60" /></a></aside>
 
-<style>
-#bulle_mess, 
-#send_mess{
-    width:80%;
-    background-color: #05AFF2;
-    border-radius:30px;
-    padding: 30px;
-}
-
-#send_mess{
-    background-color: #D6A9DF;
-    margin-bottom:30px;
-
-    
-}
-
-
-    </style>

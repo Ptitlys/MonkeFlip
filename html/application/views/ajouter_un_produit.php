@@ -6,45 +6,80 @@
 
 <section id="bloc" class="mt-4"> 
 
-    <article class="row">
 
-        <div class="ml-3 col-auto">
-            <img id="photo" width="300" height="300"/>
-        </div>
+    <article class="row">
 
         <div class="ml-3 col offset-1">
 
-            <div class="row">
-            <h2 class="col">NOM DU PRODUIT</h2>
-            <?php
-                echo '<img src=';
-                echo base_url('images/favori_vide.png');
-                echo' class="col-auto" width="40" height="40"/>';
-            ?>
+            <div class="mt-2 mb-4 row align-items-start">
+            <p class="col-auto">Nom du produit: </p>
+            <input class="col-4" type="text" min="0" id="nom" name="nom" required minlength="1" maxlength="20">
             </div>
+
+            <div class="mb-4 row align-items-start">
+                <label class="col-auto">Photo du produit:</label>
+                <input class="col-auto" type="file" id="image" name="avatar" accept="image/png, image/jpeg" multiple>
+
+                    <p class="offset-1 col-auto">Type de vente </p>
+                    <select class="col-auto" name="typeVente" id="typeVente">
+                    <option value="fixe">Prix fixe</option>
+                    <option value="enchere">Enchère</option>
+                    </select>
+            </div>
+
             
-            <p class="row">type vente</p>
 
-            <div class="row">
-            <p class="col-3">Prix:XX</p>
-            <p class="col-3">Etat</p>
+            <div class="mb-4 row align-items-start">
+
+            <p class="col-auto">Prix (ou enchère de départ):</p>
+            <input class="col-2" type="number" min="0" id="prix" name="prix" required minlength="1" maxlength="6" size="10" step=".01">
+            <p class="col-auto">€</p>
+            <p class="offset-2  col-auto">Etat</p>
+            <select class="col-auto" name="typeVente" id="typeVente">
+                <option value="passable">Passable</option>
+                <option value="enEtat">En etat</option>
+                <option value="commeNeuf">Comme neuf</option>
+                <option value="neuf">Neuf</option>
+            </select>
             </div>
-           
 
-            <div class="">
-                <p><a href="<?php echo base_url('index.php/Main_controlleur/vendeur') ?>">Nom Vendeur</a> - Note Vendeur</p>
             </div>
 
-            <p class="row-auto fond_violet button text-center">ACHAT IMMEDIAT<p>
+            <div class="row justify-content-between">
+                <p class="offset-1 col-auto">Mot clés: </p>
+                <div class="col justify-content-between">
+                <!--boucle a faire quand fonction qui ressort toute les catégories-->
+                    <select class="col-auto" name="motCle1" id="motCle1">
+                    <option value="fixe">Prix fixe</option>
+                    <option value="enchere">Enchère</option>
+                    </select>
 
-        </div>
+                    <select class="col-auto" name="motCle2" id="motCle2">
+                    <option value="fixe">Prix fixe</option>
+                    <option value="enchere">Enchère</option>
+                    </select>
+
+                    <select class="col-auto" name="motCle3" id="motCle3">
+                    <option value="fixe">Prix fixe</option>
+                    <option value="enchere">Enchère</option>
+                    </select>
+                    </div>
+                </div>
 
     </article>
 
-    <article class="ml-2 col-auto mr-2">
-        <p>Lorem ipsum dolor sit amet. Ut delectus dolore rem eaque voluptatem qui libero nostrum ut necessitatibus quia sed amet sapiente eum cupiditate molestiae sed quia earum. Ea enim perferendis ut obcaecati blanditiis est veniam dolorem sit quos natus aut voluptas omnis sit quasi autem. Sed dolor laboriosam quo nihil perferendis aut recusandae unde eos natus numquam ut corporis sunt ea modi minus eum dolorem assumenda.
-            A tempore placeat ea libero aperiam eum quos atque ea fugit voluptatem aut dolorem galisum eos officiis magnam aut fuga internos? Sed numquam porro et temporibus velit aut placeat consequatur. Eos sunt voluptas ut excepturi laboriosam aut magnam galisum hic sequi adipisci qui consectetur dolores hic explicabo voluptatibus vel nulla amet. Qui impedit eligendi eum consequatur aliquid eos voluptate excepturi et commodi excepturi.</p>
-    </article>
+
+    <p class="col-auto">Description du produit:</p>
+    <textarea id="description" class="ml-2 col-auto mr-2" required>
+       commentaire ecris avant modif.
+    </textarea>
+
+
+    <div class="row justify-content-around">
+        <input class="fond_violet_clair button text-center" type = "button" value = "Annuler"  onclick = "history.back()">
+
+        <input type="submit" value="Ajouter le produit" class="fond_violet_fonce button text-center"/>
+    </div>
 
 </section>
 
