@@ -73,7 +73,7 @@
     </textarea>
 
 
-    <div class="row justify-content-around">
+    <div class="mt-4 row justify-content-around">
         <input class="fond_violet_clair button text-center " type = "button" value = "Annuler"  onclick = "history.back()">
 
         <input type="submit" value="Valider les modifications" class="fond_violet_fonce button text-center"/>

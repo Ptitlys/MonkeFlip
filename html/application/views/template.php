@@ -248,8 +248,8 @@ h2{
     width:40%;
     border-radius:80px;
     padding:20px;
-    margin-top:40px;
     color:white;
+    border: 1.5px solid white;
 }
 
 /*Page ajouter produit et modif produit*/
