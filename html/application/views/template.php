@@ -242,6 +242,13 @@ h2{
         padding-left:5%;
     }
 
+    .fond_descrip{
+        margin-top: 20px;
+        padding: 5px 30px;
+        background-color: #0084B8;
+        border-radius:30px;
+}
+
 
 
 .button{
@@ -274,6 +281,8 @@ h2{
 a{
     text-decoration:none;
 }
+
+
 
 
 

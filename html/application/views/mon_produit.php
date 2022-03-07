@@ -37,7 +37,7 @@
 
     </article>
 
-    <article class="ml-2 col-auto mr-2">
+    <article class="ml-2 col-auto mr-2 fond_descrip">
         <p>Lorem ipsum dolor sit amet. Ut delectus dolore rem eaque voluptatem qui libero nostrum ut necessitatibus quia sed amet sapiente eum cupiditate molestiae sed quia earum. Ea enim perferendis ut obcaecati blanditiis est veniam dolorem sit quos natus aut voluptas omnis sit quasi autem. Sed dolor laboriosam quo nihil perferendis aut recusandae unde eos natus numquam ut corporis sunt ea modi minus eum dolorem assumenda.
             A tempore placeat ea libero aperiam eum quos atque ea fugit voluptatem aut dolorem galisum eos officiis magnam aut fuga internos? Sed numquam porro et temporibus velit aut placeat consequatur. Eos sunt voluptas ut excepturi laboriosam aut magnam galisum hic sequi adipisci qui consectetur dolores hic explicabo voluptatibus vel nulla amet. Qui impedit eligendi eum consequatur aliquid eos voluptate excepturi et commodi excepturi.</p>
     </article>

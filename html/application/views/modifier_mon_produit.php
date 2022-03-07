@@ -16,7 +16,7 @@
 
             <div class="mb-4 row align-items-start">
                 <label class="col-auto">Photo(s) du produit:</label>
-                <input class="col-auto" type="file" id="image" name="avatar" accept="image/png, image/jpeg" multiple>
+                <input class="col-auto" type="file" id="image" name="avatar" accept="image/png, image/jpeg">
 
                     <p class="offset-1 col-auto">Type de vente </p>
                     <select class="col-auto" name="typeVente" id="typeVente">
