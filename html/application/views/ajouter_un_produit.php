@@ -17,10 +17,10 @@
             </div>
 
             <div class="mb-4 row align-items-start">
-                <label class="col-auto">Photo du produit:</label>
+                <label class="col-auto">Photo(s) du produit:</label>
                 <input class="col-auto" type="file" id="image" name="avatar" accept="image/png, image/jpeg" multiple>
 
-                    <p class="offset-1 col-auto">Type de vente </p>
+                    <p class="offset-1 col-auto">Type de vente: </p>
                     <select class="col-auto" name="typeVente" id="typeVente">
                     <option value="fixe">Prix fixe</option>
                     <option value="enchere">Enchère</option>
@@ -34,7 +34,7 @@
             <p class="col-auto">Prix (ou enchère de départ):</p>
             <input class="col-2" type="number" min="0" id="prix" name="prix" required minlength="1" maxlength="6" size="10" step=".01">
             <p class="col-auto">€</p>
-            <p class="offset-2  col-auto">Etat</p>
+            <p class="offset-2  col-auto">Etat:</p>
             <select class="col-auto" name="typeVente" id="typeVente">
                 <option value="passable">Passable</option>
                 <option value="enEtat">En etat</option>

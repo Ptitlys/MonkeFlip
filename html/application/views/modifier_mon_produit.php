@@ -15,7 +15,7 @@
             </div>
 
             <div class="mb-4 row align-items-start">
-                <label class="col-auto">Photo du produit:</label>
+                <label class="col-auto">Photo(s) du produit:</label>
                 <input class="col-auto" type="file" id="image" name="avatar" accept="image/png, image/jpeg" multiple>
 
                     <p class="offset-1 col-auto">Type de vente </p>
@@ -74,7 +74,7 @@
 
 
     <div class="row justify-content-around">
-        <input class="fond_violet_clair button text-center" type = "button" value = "Annuler"  onclick = "history.back()">
+        <input class="fond_violet_clair button text-center " type = "button" value = "Annuler"  onclick = "history.back()">
 
         <input type="submit" value="Valider les modifications" class="fond_violet_fonce button text-center"/>
     </div>
