@@ -6,7 +6,7 @@
 
 <section id="bloc" class="mt-4"> 
 
-
+    <form id="ajoutproduit" action="" onsubmit="return ajouterProduit(this)" method="post">
     <article class="row">
 
         <div class="ml-3 col offset-1">
@@ -28,7 +28,7 @@
             </div>
 
             
-
+        
             <div class="mb-4 row align-items-start">
 
             <p class="col-auto">Prix (ou enchère de départ):</p>
@@ -80,6 +80,7 @@
 
         <input type="submit" value="Ajouter le produit" class="fond_violet_fonce button text-center"/>
     </div>
+    </form>
 
 </section>
 

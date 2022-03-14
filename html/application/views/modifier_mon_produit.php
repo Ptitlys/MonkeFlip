@@ -5,7 +5,7 @@
 </nav>
 
 <section id="bloc" class="mt-4"> 
-
+    <form id="modifierproduit" action="" onsubmit="return modifierProduit(this)" method="post">
     <article class="row">
 
         <div class="ml-3 col offset-1">
@@ -78,6 +78,7 @@
 
         <input type="submit" value="Valider les modifications" class="fond_violet_fonce button text-center"/>
     </div>
+</form>pété
 
 </section>
 
