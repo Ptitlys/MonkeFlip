@@ -21,7 +21,7 @@ contract Utilisateur {
         username = _username;
         registered = true;
         nombreAnnonce = 0;
-        nombre
+        nombreAchats = 0;
     }
 
     function modifierUtilisateur(string memory _localisation, string memory _mail, string memory _tel, string memory _username)public{
@@ -135,17 +135,17 @@ contract MonkeFlip{
         listeUtilisateurs[msg.sender].modifierUtilisateur(_localisation, _mail, _tel, _username);
     }
     //Créé nouvelle Annonce et fais les mises à jour des données
-    function creerAnnonce(string memory _titre, string memory _description, string memory _etat, uint _prix, string memory _modeAcheminement, string memory _localisation) isRegistered public{
+    function creerAnnonce(string memory _titre, string memory _description, string memory _etat, uint _prix, string memory _modeAcheminement, string memory _localisation, string memory _categorie, string memory _urlImage) isRegistered public{
         require(_prix>0,"Le prix doit etre superieur a 0");
-        Annonce newAnnonce = new Annonce(listeUtilisateurs[msg.sender],_titre,_description,_etat, _prix,_modeAcheminement,_localisation);
+        Annonce newAnnonce = new Annonce(listeUtilisateurs[msg.sender],_titre,_description,_etat, _prix,_modeAcheminement,_localisation,_categorie,_urlImage);
         listeAnnonces[msg.sender][listeUtilisateurs[msg.sender].nombreAnnonce()] = newAnnonce;
         listeUtilisateurs[msg.sender].setNombreAnnonce(listeUtilisateurs[msg.sender].nombreAnnonce()+1);
         emit AnnonceCree(msg.sender, listeUtilisateurs[msg.sender].nombreAnnonce());
     }
 
     //Modifie une annonce
-    function modifierAnnonce(uint indexAnnonce, string memory _titre, string memory _description, string memory _etat, uint _prix, string memory _modeAcheminement, string memory _localisation) isRegistered public {
-        listeAnnonces[msg.sender][indexAnnonce].modifierAnnonce(_titre,_description,_etat, _prix,_modeAcheminement,_localisation);
+    function modifierAnnonce(uint indexAnnonce, string memory _titre, string memory _description, string memory _etat, uint _prix, string memory _modeAcheminement, string memory _localisation, string memory _categorie) isRegistered public {
+        listeAnnonces[msg.sender][indexAnnonce].modifierAnnonce(_titre,_description,_etat, _prix,_modeAcheminement,_categorie,_localisation);
     }
 
     function acheterAnnonce(address userAnnonce, uint indexAnnonce) public payable isRegistered {
@@ -158,10 +158,7 @@ contract MonkeFlip{
     }
 
     function initAnnonces() public isRegistered {
-        creerAnnonce("Titre1","Desc1","Etat1",1000000000000000000,"modeAcheminement1","localisation1");
-        creerAnnonce("Titre2","Desc2","Etat2",2000000000000000000,"modeAcheminement2","localisation2");
-        creerAnnonce("Titre3","Desc3","Etat3",3000000000000000000,"modeAcheminement3","localisation3");
-        creerAnnonce("Titre4","Desc4","Etat4",4000000000000000000,"modeAcheminement4","localisation4");
+        creerAnnonce("Titre1","Desc1","Etat1",1000000000000000000,"modeAcheminement1","localisation1", "Immobilier", "moncaca");
     }
 
     function envoyerMessage(address _to, string memory _message) public isRegistered{
