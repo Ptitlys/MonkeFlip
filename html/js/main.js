@@ -13,6 +13,7 @@ class Utilisateur{
     this.nombreAnnonce=_nombreAnnonce;
     this.nombreAchats = _nombreAchats
     }
+
     getAdresse(){
         return this.adresse;
     } 
