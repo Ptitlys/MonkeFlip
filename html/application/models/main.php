@@ -1,6 +1,6 @@
 <?php
 
-require_once base_url("autoload.php");
+require_once base_url("vendor/autoload.php");
 
 use Web3\Web3;
 use Web3\Contract;
@@ -114,6 +114,7 @@ class Annonce{
     public function getPrix(){
         return $this->prix;
     }
+    
 }jus de thym est pas bo*/
 //https://prnt.sc/dD5tAXkdvxn- <= OMG NO FAKE NE PAS CLIQUER
 
