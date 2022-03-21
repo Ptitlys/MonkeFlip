@@ -78,7 +78,7 @@
 
         <input type="submit" value="Valider les modifications" class="fond_violet_fonce button text-center"/>
     </div>
-</form>pété
+</form>
 
 </section>
 

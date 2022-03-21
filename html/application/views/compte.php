@@ -9,4 +9,6 @@
 
 <a href="<?php echo base_url('index.php/Main_controlleur/vos_offres') ?>"><h2>Vos offres</h2></a>
 
+<?php $this->load->model ( 'main' ); ?>
+
 <h2>Votre historique d'achat</h2>

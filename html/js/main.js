@@ -1,6 +1,6 @@
 //pierre jouie pannepied
-import React, { Component } from 'react';
-import Web3 from 'web3';
+import React from '../node_modules/react';
+import Web3 from '../node_modules/web3';
 
 class Utilisateur{
     constructor(_adresse, _username, _mail, _localisation, _tel, _note, _nombreAnnonce){
@@ -41,7 +41,7 @@ class Utilisateur{
 
     async componentWillMount(){
         await this.loadWeb3()
-        //await this.LoadBlockChainData()
+        await this.LoadBlockChainData()
       }
     
       async loadWeb3(){
@@ -87,12 +87,9 @@ class Utilisateur{
 }
 
 let createUtilisateur = function(_localisation, _mail,  _tel, _username) {
-    //_adresse = get metamask adresse
-    const marketplace = web3.eth.Contract(Marketplace.abi, 0xedb82dae6814eb93b870251d0981e6949946a93b)
-    const accounts = await web3.eth.getAccounts()
-    let _adress = accounts[0]
-    ma
     //Appel du contrat pour creer ce nouvel utilisateur dans la blockchain;
+    monkeflip.methods.nouvelUtilisateur(_localisation, _mail, _tel, _username).send();
+
 }
 
 class Annonce{
@@ -158,14 +155,9 @@ let ajouterProduit = function(form, addresse) {
     var description = document.getElementById('ajoutproduit').description.value;
     
     return true;
-    this.user=_user;
-    this.description=_description;
     this.modeAcheminement=_modeAcheminement;
     this.localisation=_localisation;
     this.urlImage=_urlImage;
-    this.categorie=_categorie;
-    this.vendu=false;
-    this.userVendu=_userVendu;
 }
 
 let modifierProduit = function(form, addresse) {

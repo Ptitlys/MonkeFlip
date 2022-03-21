@@ -1,4 +1,5 @@
-{
+<?php
+$abiMonkeFlip = `{
 	"compiler": {
 		"version": "0.8.7+commit.e28d00a7"
 	},
@@ -312,4 +313,5 @@
 		}
 	},
 	"version": 1
-}
+}`
+?>

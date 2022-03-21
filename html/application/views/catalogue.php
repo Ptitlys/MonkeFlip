@@ -31,7 +31,7 @@
        
             for($i = 0;$i < 5; $i++):
                 echo '<div class="row mb-5 mt-4">';
-                    for($j = 0;$j < 6; $j++):
+                    for($j = 0;$j < 5; $j++):
                     echo '<div class="col-auto" id="article">';
                     echo '<img src=';
                     echo base_url('images/favori.png');
