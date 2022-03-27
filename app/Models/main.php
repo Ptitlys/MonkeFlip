@@ -1,7 +1,6 @@
 <?php
 
 require_once base_url("vendor/autoload.php");
-require_once base_url("vendor/web3p/web3.php/src/Web3.php");
 
 use Web3\Web3;
 use Web3\Contract;

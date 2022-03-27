@@ -16,7 +16,7 @@
     <p class="m-3 keyword text-center col-auto">mot clé</p>
     <p class="m-3 keyword text-center col-auto">mot clé</p>
     <h1 class="pt-4 pb-5 titre text-center col-7">Catalogue</h1>
-</div>
+</div> 
 
 
 
