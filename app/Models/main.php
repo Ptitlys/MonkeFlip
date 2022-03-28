@@ -7,21 +7,26 @@ use Web3\Contract;
 use Web3\Providers\HttpProvider;
 use Web3\RequestManagers\HttpRequestManager;
 
-$web3 = new Web3(new HttpProvider(new HttpRequestManager("https://data-seed-prebsc-1-s1.binance.org:8545/")));
+$timeout = 30;
+
+$web3 = new Web3(new HttpProvider(new HttpRequestManager("https://mainnet.infura.io/v3/6e412cd44d4d424ea686e5edd7ef5203", $timeout)));
+
 
 $eth = $web3->eth;
 
 $eth->blockNumber(function ($err, $data) {
-        echo "Latest block number is: ". $data . " \n";
+        echo "Latest block number is: ". $data . " MERDE \n";
 });
 
+/*
 $contract = new Contract('https://bsc-dataseed.binance.org/', $abiMonkeFlip);
 $contractAddress = "0xedb82daE6814eb93B870251d0981E6949946A93B";
 $contract->at($contractAddress)->call("listeUtilisateurs", "0x5D581cf3F42ea1dee1a506b24B806DE06EFabA30", $callback);
 print_r($callback);
+*/
 
 
-
+/*
 class Utilisateur{
     private $address;
     private $username;
@@ -71,7 +76,7 @@ class Utilisateur{
     }
 }
 
-/*
+
 class Annonce{
     private $titre;
     private $description;
