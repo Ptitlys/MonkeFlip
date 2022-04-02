@@ -1,12 +1,12 @@
 <!-- favoris / messagerie -->
 <nav id="petit_menu" class="row-auto">
-    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
-    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
+    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('public/images/message.png') ?>' height=55></a>
+    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('public/images/favori.png') ?>' height=55></a>
 </nav>
 
 <!--Filtre-->
 <figure id="filtre">
-<img  src='<?php echo base_url('images/filtre.png') ?>' height=55>
+<img  src='<?php echo base_url('public/images/filtre.png') ?>' height=55>
 </figure>
 
 <h1 class="mb-5 mt-4 pt-4 pb-5 titre text-center">VOS FAVORIS</h1>
@@ -29,11 +29,11 @@
 
     </article>
 
-    <a class="text-center" href="<?php echo base_url('index.php/Main_controlleur/catalogue') ?>"><h3>Retrouver tout le catalogue ici</h3></a>
+    <a class="text-center" href="<?php echo base_url('public/index.php/Main_controlleur/catalogue') ?>"><h3>Retrouver tout le catalogue ici</h3></a>
 </section>
 
 
-<aside id="fleche"><a href=#debut><img src='<?php echo base_url('images/fleche.png') ?>' title="fleche" height="60" width="60" /></a></aside>
+<aside id="fleche"><a href=#debut><img src='<?php echo base_url('public/images/fleche.png') ?>' title="fleche" height="60" width="60" /></a></aside>
 
 <style>
     .rectangle_favori{

@@ -1,13 +1,13 @@
 <!-- Menu graphe / favoris / messagerie -->
 <nav id="petit_menu_vertical" class="col-auto">
-    <a class="row mb-2" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
-    <a class="row mb-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
+    <a class="row mb-2" href="<?php echo base_url('public/index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('public/images/message.png') ?>' height=55></a>
+    <a class="row mb-2" href="<?php echo base_url('public/index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('public/images/favori.png') ?>' height=55></a>
 </nav>
 
 <!--Filtre-->
 <figure id="filtre">
-<a href="<?php echo base_url('index.php/Main_controlleur/ajouter_un_produit') ?>">
-<img src='<?php echo base_url('images/plus.png') ?>' height=55>
+<a href="<?php echo base_url('public/index.php/Main_controlleur/ajouter_un_produit') ?>">
+<img src='<?php echo base_url('public/images/plus.png') ?>' height=55>
 </a>
 </figure>
 
@@ -25,7 +25,7 @@
             
             for($i = 0;$i < 2; $i++):
             echo '<a href=';
-            echo base_url('index.php/Main_controlleur/mon_produit');
+            echo base_url('public/index.php/Main_controlleur/mon_produit');
                 echo '><div class=" sous-bloc row align-items-center">';
                     echo '<img class="m-3 col-auto" id="photo" width="100" height="100"/>';
                     echo '<p class="pl-5 pr-5 col-auto">Prix</p>';
@@ -39,7 +39,7 @@
         <h2>- Prix fixe</h2>
         <?php for($i = 0;$i < 2; $i++):
                 echo '<a href=';
-                echo base_url('index.php/Main_controlleur/produit');
+                echo base_url('public/index.php/Main_controlleur/produit');
                 echo '><div class="sous-bloc row align-items-center">';
                     echo '<img class="m-3 col-auto" id="photo" width="100" height="100"/>';
                     echo '<p class="col-auto" >Prix</p>';
@@ -56,6 +56,6 @@
 
 </section>
 
-<aside id="fleche"><a href=#debut><img src='<?php echo base_url('images/fleche.png') ?>' title="fleche" height="60" width="60" /></a></aside>
+<aside id="fleche"><a href=#debut><img src='<?php echo base_url('public/images/fleche.png') ?>' title="fleche" height="60" width="60" /></a></aside>
 
 

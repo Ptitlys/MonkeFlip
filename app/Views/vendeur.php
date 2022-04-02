@@ -1,8 +1,8 @@
 
 <!-- favoris / messagerie -->
 <nav id="petit_menu" class="row-auto">
-    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('images/message.png') ?>' height=55></a>
-    <a  class="text-center px-2" href="<?php echo base_url('index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('images/favori.png') ?>' height=55></a>
+    <a  class="text-center px-2" href="<?php echo base_url('public/index.php/Main_controlleur/messagerie') ?>"><img src='<?php echo base_url('public/images/message.png') ?>' height=55></a>
+    <a  class="text-center px-2" href="<?php echo base_url('public/index.php/Main_controlleur/favori') ?>"><img src='<?php echo base_url('public/images/favori.png') ?>' height=55></a>
 </nav>
 
 <section>
@@ -38,14 +38,14 @@
             for ($i=1;$i<$favori;$i++){
                 echo '<div class="col-auto note">';
                 echo '<img src=';
-                echo base_url('images/favori.png');
+                echo base_url('public/images/favori.png');
                 echo' width="40" height="40"/>';
                 echo '</div>';
             }
             for ($i=0;$i<$mifavori;$i++){
                 echo '<div class="col-auto note">';
                 echo '<img src=';
-                echo base_url('images/mi_favori.png');
+                echo base_url('public/images/mi_favori.png');
                 echo'  width="40" height="40"/>';
                 echo '</div>';
             }
@@ -64,7 +64,7 @@
     </article>
 </section>
 
-<aside id="fleche"><a href=#debut><img src='<?php echo base_url('images/fleche.png') ?>' title="fleche" height="60" width="60" /></a></aside>
+<aside id="fleche"><a href=#debut><img src='<?php echo base_url('public/images/fleche.png') ?>' title="fleche" height="60" width="60" /></a></aside>
 
 <style>
     #commentaire{
